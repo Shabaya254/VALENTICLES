@@ -1,0 +1,47 @@
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Valenticles</a>
+        <div class="menu-toggle"></div>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <nav class="navbar">
+        <ul>
+            <li><a href="articlesbyvalenticles.html"> Home</a></li>
+            <li><a href="#about.html"> About</a></li>
+            <li><a href="articles.html"> Articles</a></li>
+            <li><a href="#contact.html" class="active"> Contact us</a></li>
+        </ul>
+        </nav>
+        </header>
+        <section class="banner"></section>
+        <script type="text/javascript" async>
+         window.addEventListener("scroll", function(){
+             var header = document.querySelector("header");
+             header.classList.toggle("sticky", window.scrollY > 0);
+         })
+        </script>
+        <script type="text/javascript" async>
+            hamburger = document.querySelector(".hamburger");
+            hamburger.onclick = function (){
+                navbar = document.querySelector(".navbar");
+                navbar.classList.toggle("active");
+            }
+        </script>
+        <h1>CONTACT US</h1>
+</body>
+</html>
