@@ -1,0 +1,574 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    /**background: #b21111;**/
+    min-height: 200vh;
+}
+header
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding: 40px 100px;
+    font-family:'Roboto Slab', serif;
+    z-index: 100000;
+}
+header.sticky
+{
+    padding: 5px 10px;
+    background: #fff;
+}
+.logo #ticles
+{
+    color: #df1919;
+}
+header .logo
+{
+position: relative;
+font-weight: 100;
+color: #268b41;
+text-decoration: none;
+font-size: 2em;
+letter-spacing: 2px;
+transition: 0.6s;
+}
+header ul
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul li
+{
+    position: relative;
+    list-style: none;
+}
+header ul li a
+{
+    position: relative;
+    text-decoration: none;
+    padding: 10px 25px;
+    letter-spacing: 2px;
+    margin: 0 5px;
+    font-weight: 500px;
+    font-size: 15px;
+    color: #808080;
+    transition: 0.6s;
+    border-radius: 100px;
+}
+.banner
+{
+    position: relative;
+    width: 100%;
+    height: 120vh;
+    background-image: url(3.jpg);
+    background-size: cover;
+    transition: 0s;
+}
+header.sticky.logo, 
+header .sticky ul li a
+{
+    color: #000000;
+}
+nav ul li a.active,
+nav ul li a:hover
+{
+    color: #000000;
+    background: #00ffff;
+    transition: 0.5s;
+}
+.content
+{
+    position: absolute;
+    color: #0e1410;
+    top: 20%;
+    left: 8%;
+    font-family: 'Lora', serif;
+}
+#aboutimage
+{
+    height: 70vh;
+    width: 50%;
+    position: relative;
+    padding-left: 30;
+    padding-top: 40;
+    margin-right: 30;
+}
+.about
+{
+    background-color: #000000;
+    padding: 100px, 0;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-bottom: 40px;
+}
+.aboutcontent
+{
+    color: #fff;
+}
+.aboutcontent h2
+{
+    color: #fff;
+    font-size: 75px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+.aboutcontent p
+{
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 20px;
+}
+.articletitle
+{
+    position: relative;
+    text-align: center;
+    padding-top: 50px;
+    background-image: url(africanprint.jpg);
+}
+.ourarticles
+{
+    color: rgb(254, 245, 245);
+}
+.articles
+{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    /*justify-content: center;*/
+    align-items: center;
+    padding: 130px 0px;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-bottom: 230px;
+    flex-wrap: wrap;
+    background: #000000;
+}
+.boxcontent
+{
+    position: relative;
+    width: 320px;
+    height: 400px;
+    color: #fff;
+    background: #000000;
+    padding-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px, 30px;
+    transition: 0.25s;
+}
+.articles .boxcontent:hover
+{
+    transform: translateY(-20px);
+}
+.articles .boxcontent::before
+{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg,#ffbc00,#ff0058);
+}
+.articles .boxcontent::after
+{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg,#ffbc00,#ff0058);
+    filter: blur(20px);
+}
+.articles .boxcontent:nth-child(1)::before,
+.articles .boxcontent:nth-child(2)::after
+{
+    background: linear-gradient(315deg, #03a9f4, #ff0058);
+}
+.articles .boxcontent:nth-child(3)::before,
+.articles .boxcontent:nth-child(3)::after
+{
+    background: linear-gradient(315deg, #4fe786, #08e6e9);
+}
+.articles .boxcontent .spani
+{
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    bottom: 6px;
+    left: 6px;
+    background: rgb(0, 0, 0, 0.6);
+    z-index: 2;
+}
+
+.articles .boxcontent .spani::before
+{
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+width: 50%;
+height: 100%;
+background: rgb(255, 255, 255, 0.1);
+}
+.articles .boxcontent .contentinbox
+{
+    position: relative;
+    z-index: 10;
+    padding: 20px, 40px;
+}
+
+.viewallarticles
+{
+    color: rgb(254, 245, 245);
+    position: absolute;
+    /*position: relative;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 600;
+    background: #000000;
+}
+.viewallarticles a
+{
+    /*color:rgb(254, 245, 245) ;*/
+    font-size: 1.5em;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: 700;
+}
+.viewallarticles a:hover
+{
+background: #00ffff;
+transition: 0.5s;
+transform: translateX(-20px);
+transform: translateY(-20px);
+border-radius: 50px;
+padding: 10px 25px;
+}
+footer
+{
+    position: relative;
+    background: #00ffff;
+    width: 100%;
+    min-height: 200px;
+    padding: 20px, 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .socials
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+}
+
+footer .socials li
+{
+list-style: none;
+}
+
+footer .socials li a
+{
+    font-size: 2em;
+    color: rgb(255, 255, 255);
+    margin: 0, 20px;
+    display: inline-block;
+    transition: 1.5s;
+}
+footer .socials li a:hover
+{
+transform: translateY(-10px);
+}
+footer .wave
+{
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url(mywave.png);
+    background-size: 1000px, 100px;
+
+}
+footer .wave#wave1
+{
+    z-index: 1000;
+    opacity: 1;
+    bottom: 0;
+    animation: animateWave 4s linear infinite;
+}
+
+footer .wave#wave2
+{
+    z-index: 999;
+    opacity: 0.5;
+    bottom: 10px;
+    animation: animateWave_02 4s linear infinite;
+}
+footer .wave#wave3
+{
+    z-index: 1000;
+    opacity: 0.2;
+    bottom: 15px;
+    animation: animateWave_03 3s linear infinite;
+}
+
+footer .wave#wave4
+{
+    z-index: 999;
+    opacity: 0.7;
+    bottom: 20px;
+    animation: animateWave_04 3s linear infinite;
+}
+@keyframes animateWave
+{
+    0%
+    {
+        background-position-x: 1000px;
+    }
+    100%
+    {
+        background-position-x: 0px;
+    }
+}
+@keyframes animateWave_02
+{
+    0%
+    {
+        background-position-x: 0px;
+    }
+    100%
+    {
+        background-position-x: 1000px;
+    }
+}
+@keyframes animateWave_03
+{
+    0%
+    {
+        background-position-x: 1000px;
+    }
+    100%
+    {
+        background-position-x: 0px;
+    }
+}
+@keyframes animateWave_04
+{
+    0%
+    {
+        background-position-x: 0px;
+    }
+    100%
+    {
+        background-position-x: 1000px;
+    }
+}
+
+.articlesbody
+{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+}
+.articlescontainer
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.box
+{
+    position: relative;
+    width: 300px;
+    padding: 60px;
+    background: #fff;
+    box-shadow: 0 5px 15px rgba(0,0,0,.1);
+    border-radius: 4px;
+    margin: 30px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.icon 
+{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    color: #fff;
+    background: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    border-radius: 50%;
+    transition: 1s;
+}
+.articlescontent
+{
+    position: relative;
+    transition: 0.5s;
+    z-index: 1;
+}
+.articlescontainer .box:nth-child(1) .box
+{
+    box-shadow: 0 0 0 0 #268b41;
+    background: #268b41;
+}
+.articlescontainer .box:nth-child(1):hover .box
+{
+    box-shadow: 0 0 0 400px #268b41;
+}
+@media only screen and (max-width: 1320px)
+{
+   header
+   {
+       padding: 0 50px;
+   } 
+}
+
+@media only screen and (max-width: 1100px)
+{
+   header
+   {
+       padding: 0 20px;
+   } 
+   .banner
+   {
+       height: 70vh;
+       width: 100%;
+   }
+   .about #aboutimage
+   {
+       height: 40vh;
+       width: 50%;
+       position: relative;
+   }
+   .aboutcontent p
+{
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 20px;
+    margin-right: 10px;
+}
+}
+
+@media (max-width: 768px)
+{
+    .hamburger
+    {
+        display: block;
+        cursor: pointer;
+    }
+    .hamburger .line
+    {
+        width: 50px;
+        height: 3px;
+        margin: 10px 0;
+        background: #0a0909;
+    }
+    .navbar
+    {
+        height: 0px;
+        position: absolute;
+        top: 80px;
+        right: 0;
+        left: 0;
+        width: 100vw;
+        background: #000000;
+        transition: 0.5s;
+        overflow: hidden;
+    }
+    .navbar.active
+    {
+        height: 450px;
+    }
+    .navbar ul 
+    {
+        display: block;
+        width: fit-content;
+        margin: 70px auto 0 auto;
+        text-align: center;
+        transition: 0.5s;
+        opacity: 0;
+    }
+    .navbar.active ul
+    {
+        opacity: 1;
+    }
+    .navbar ul li  
+    {
+        margin-bottom: 30px;
+        color: #301aac;
+    }
+    .banner
+    {
+        height: 42vh;
+        width: 100%;
+        background-size: cover;
+    }
+
+    .about #aboutimage
+    {
+    height: 30vh;
+    width: 50%;
+    position: relative;
+    padding-left: 10;
+    padding-top: 20;
+    margin-right: 10;
+    }
+    .about
+    {
+    background-color: #000000;
+    padding: 100px, 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-bottom: 40px;
+    }
+    .aboutcontent
+    {
+    color: #fff;
+    }
+    .aboutcontent h2
+    {
+    color: #fff;
+    font-size: 20px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    }
+    .aboutcontent p
+    {
+    letter-spacing: 1px;
+    line-height: 15px;
+    font-size: 12px;
+    }
+}

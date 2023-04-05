@@ -1,0 +1,93 @@
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    
+<script src="https://unpkg.com/react/umd/react.production.min.js"></script>
+<script src="https://unpkg.com/react-dom/umd/react-dom.production.min.js"></script>
+</head>
+<body class="articlesbody">
+    <header>
+        <a href="#" class="logo">Valen<span id="ticles">ticles</span></a>
+        <div class="menu-toggle"></div>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <nav class="navbar">
+        <ul>
+            <li><a href="articlesbyvalenticles.html"> Home</a></li>
+            <li><a href="articles.html" class="active"> Articles</a></li>
+        </ul>
+        </nav>
+        </header>
+
+        <div class="articlescontainer">
+            <div class="box">
+                <div class="icon">01</div>
+                <div class="articlescontent">
+                    <h3>Bankman now bankrupt </h3>
+                <p>Bankman Friend, crypto millionaire broke and in debt
+                    as those who bet on his brains now run after him
+                    not for wisdombut demanding their money back. It's going
+                    down</p>
+            </div>
+            </div>
+
+                <div class="box">
+                    <div class="icon">02</div>
+                    <div class="articlescontent">
+                    <h3>Bankman now bankrupt </h3>
+                    <p>Bankman Friend, crypto millionaire broke and in debt
+                        as those who bet on his brains now run after him
+                        not for wisdombut demanding their money back. It's going
+                        down</p>
+                </div>
+                </div>
+
+                    <div class="box">
+                        <div class="icon">03</div>
+                        <div class="articlescontent">
+                            <h3>Bankman now bankrupt </h3>
+                        <p>Bankman Friend, crypto millionaire broke and in debt
+                            as those who bet on his brains now run after him
+                            not for wisdombut demanding their money back. It's going
+                            down</p>
+                    </div>
+                    </div>
+        </div> 
+
+        <div id="root"></div>
+    
+        
+        <script type="text/javascript" async>
+         window.addEventListener("scroll", function(){
+             var header = document.querySelector("header");
+             header.classList.toggle("sticky", window.scrollY > 0);
+         })
+        </script>
+        <script type="text/javascript" async>
+            hamburger = document.querySelector(".hamburger");
+            hamburger.onclick = function (){
+                navbar = document.querySelector(".navbar");
+                navbar.classList.toggle("active");
+            }
+        </script> 
+
+
+<script src="https://unpkg.com/react/umd/react.development.js"></script>
+<script src="https://unpkg.com/react-dom/umd/react-dom.development.js"></script>
+        
+<script src="https://unpkg.com/react/umd/react.production.min.js"></script>
+<script src="https://unpkg.com/react-dom/umd/react-dom.production.min.js"></script>
+<script type="module" src="app.js"></script>
+</body>
+</html>
